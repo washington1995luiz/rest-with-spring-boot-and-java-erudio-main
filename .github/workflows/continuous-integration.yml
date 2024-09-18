@@ -3,7 +3,7 @@ name: Continuous Integration with Github Actions
 on:
   push:
     branches:
-      - Main
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
