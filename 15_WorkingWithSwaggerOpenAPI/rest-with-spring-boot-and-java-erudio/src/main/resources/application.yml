@@ -1,0 +1,17 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/rest_with_spring_boot_erudio?useTimezone=true&serverTimezone=UTC
+        username: root
+        password: 12345
+    jpa:
+        hibernate:   
+            ddl-auto: none
+        properties:
+            show-sql: false
+        open-in-view: false
+springdoc:
+    pathsToMatch: /api/**/v1/**
+    swagger-ui:
+        enabled: true
+        use-root-path: true
