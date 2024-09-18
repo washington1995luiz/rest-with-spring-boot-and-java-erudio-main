@@ -41,26 +41,6 @@ class BookServiceTest {
         MockitoAnnotations.openMocks(this);
     }
 
-//    @Test
-//    void findAll() {
-//        List<Book> list = input.mockEntityList();
-//
-//        when(repository.findAll()).thenReturn(list);
-//        var books = service.findAll();
-//        assertEquals(20, books.size());
-//        for(int i = 0; i < books.size(); i++){
-//            assertNotNull(books.get(i));
-//            assertNotNull(books.get(i).getKey());
-//            assertNotNull(books.get(i).getLinks());
-//            assertTrue(books.get(i).toString().contains("links: [</api/books/v1/"+i+">;rel=\"self\"]"));
-//            assertEquals("Title book" + i, books.get(i).getTitle());
-//            assertEquals("Author book" + i, books.get(i).getAuthor());
-//            assertEquals(5.0 + i, books.get(i).getPrice());
-//            assertEquals(getDate(i), books.get(i).getLaunchDate());
-//
-//        }
-//    }
-
     @Test
     void findById() {
         Book entity = input.mockEntity(1);

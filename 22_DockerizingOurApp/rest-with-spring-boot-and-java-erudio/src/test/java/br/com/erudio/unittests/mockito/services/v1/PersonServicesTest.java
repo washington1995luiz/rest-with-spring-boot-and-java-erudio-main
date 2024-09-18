@@ -39,28 +39,6 @@ class PersonServicesTest {
         input = new MockPerson();
         MockitoAnnotations.openMocks(this);
     }
-//
-//    @Test
-//    void findAll() {
-//        List<Person> list = input.mockEntityList();
-//
-//        when(personRepository.findAll()).thenReturn(list);
-//        var people = service.findAll(pageable);
-//        assertEquals(14, people.size());
-//
-//        for(int i = 0; i < people.size(); i++){
-//            assertNotNull(people.get(i));
-//            assertNotNull(people.get(i).getKey());
-//            assertNotNull(people.get(i).getLinks());
-//            assertTrue(people.get(i).toString().contains("links: [</api/person/v1/"+i+">;rel=\"self\"]"));
-//            assertEquals("Addres Test" + i, people.get(i).getAddress());
-//            assertEquals("First Name Test" + i, people.get(i).getFirstName());
-//            assertEquals("Last Name Test" + i, people.get(i).getLastName());
-//
-//            assertEquals(i%2==0 ? "Male" : "Female", people.get(i).getGender());
-//        }
-//
-//    }
 
     @Test
     void findById() {
